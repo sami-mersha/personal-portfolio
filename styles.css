@@ -1,11 +1,17 @@
 :root{
     --color-one: #22223b;
     --color-two: #4a4e69;
-    --color-one: #9a8c98;
-    --color-one: #c9ada7;
-    --color-one: #f2e9e4;
+    --color-three: #9a8c98;
+    --color-four: #c9ada7;
+    --color-five: #f2e9e4;
+}
+
+body{
+    background-color: var(--color-five);
+    padding: 0;
+    margin: 0;
 }
 
 header{
-    background-color: var(--color-one);
+    background-color: var(--color-four);
 }
