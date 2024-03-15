@@ -1,0 +1,11 @@
+:root{
+    --color-one: #22223b;
+    --color-two: #4a4e69;
+    --color-one: #9a8c98;
+    --color-one: #c9ada7;
+    --color-one: #f2e9e4;
+}
+
+header{
+    background-color: var(--color-one);
+}
