@@ -4,14 +4,135 @@
     --color-three: #9a8c98;
     --color-four: #c9ada7;
     --color-five: #f2e9e4;
+    --color-six: #f1f1f1;
 }
 
 body{
-    background-color: var(--color-five);
+    background-color: var(--color-six);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 0;
     margin: 0;
 }
 
 header{
+    background-color: var(--color-five);
+    padding: 2rem 0 0 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+  
+header p {
+    color: var(--color-two);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+header nav {
     background-color: var(--color-four);
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+header nav ul{
+    list-style-type: none;
+    display: flex;
+}
+
+header nav li {
+    margin: 0 1rem;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--color-two);
+    font-weight: bold;
+}
+
+header nav a:hover{
+    color: var(--color-one);
+}
+
+main {
+    padding: 0 2rem;
+}
+
+main section {
+    margin-bottom: 2rem;
+}
+
+main h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+main p {
+    line-height: 1.5;
+}
+
+.project-list {
+    display: flex;
+    padding: 0 1rem;
+    list-style: none;
+}
+
+.project-list li {
+    margin: 1rem 0.5rem;
+    padding: 1rem;
+    background-color: var(--color-three);
+}
+
+.project-list h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-list a {
+  text-decoration: none;
+  color: var(--color-two);
+}
+
+.project-list a {
+    text-decoration: none;
+    color: var(--color-two);
+}
+
+.project-list a:hover {
+    text-decoration: none;
+    color: var(--color-one);
+}
+
+main #contact ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+main #contact ul li{
+    padding: 1rem;
+    background-color: var(--color-four);
+    width: 40%;
+}
+
+main #contact ul li a{
+    text-decoration: none;
+    color: var(--color-two);
+}
+
+main #contact ul li a:hover{
+    color: var(--color-one);
+}
+
+footer{
+    background-color: var(--color-two);
+    display: flex;
+    justify-content: center;
+}
+
+footer p{
+    color: var(--color-six);
 }
