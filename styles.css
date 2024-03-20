@@ -96,12 +96,26 @@ main p {
     display: flex;
     padding: 0 1rem;
     list-style: none;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .project-list li {
     margin: 1rem 0.5rem;
     padding: 1rem;
+    height: auto;
+    width: 40%;
     background-color: var(--color-three);
+    flex-grow: 0.5;
+    border-radius: 1rem;
+}
+
+.project-list li img{
+    max-width: 100%;
+}
+
+.project-list p{
+    color: var(--color-one);
 }
 
 .project-list h3 {
@@ -134,6 +148,7 @@ main #contact ul li{
     padding: 1rem;
     background-color: var(--color-five);
     width: 40%;
+    border-radius: 0.5rem;
 }
 
 main #contact ul li a{
