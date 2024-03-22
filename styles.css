@@ -138,6 +138,61 @@ main p {
     color: var(--color-one);
 }
 
+.certifications-list {
+    display: flex;
+    padding: 0 1rem;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.certifications-list li {
+    margin: 1rem 0.5rem;
+    padding: 1rem;
+    height: auto;
+    width: 40%;
+    background-color: var(--color-three);
+    flex-grow: 0.5;
+    border-radius: 1rem;
+}
+
+.certifications-list li div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.certifications-list p{
+    color: var(--color-one);
+}
+
+.certifications-list h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.certifications-list a {
+  text-decoration: none;
+  color: var(--color-two);
+}
+
+.certifications-list a {
+    text-decoration: none;
+    color: var(--color-two);
+}
+
+.certifications-list a:hover {
+    text-decoration: none;
+    color: var(--color-one);
+}
+
+.certifications-list li hr{
+    border-bottom: 1px solid var(--color-two);
+    margin: -10px 0;
+    width: 50%;
+}
+
 main #contact ul{
     list-style-type: none;
     display: flex;
