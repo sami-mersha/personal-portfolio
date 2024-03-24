@@ -1,14 +1,15 @@
 :root{
     --color-one: #22223b;
     --color-two: #4a4e69;
-    --color-three: #9a8c98;
+    --color-three: #9289a0;
     --color-four: #c9ada7;
     --color-five: #f2e9e4;
     --color-six: #f1f1f1;
+    --color-seven: #9a8c98;
 }
 
 body{
-    background-image: repeating-linear-gradient(45deg, var(--color-three) 20%, var(--color-two));
+    background-image: repeating-linear-gradient(135deg, var(--color-two), var(--color-seven), var(--color-four));
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 0;
     margin: 0;
@@ -30,22 +31,30 @@ p{
     color: var(--color-six);
 }
 
-header{
-    background-color: var(--color-six);
-    padding: 2rem 0 0 0;
+#intro{
+    background-image: radial-gradient(var(--color-three) 2%, var(--color-two));
+    padding: 2rem 0 1rem 0;
     text-align: center;
+    margin: 0 0 -3.6rem 0;
 }
 
-header h1 {
+#intro h1 {
     margin: 0;
     font-size: 2rem;
-    color: var(--color-one);
+    color: var(--color-six);
 }
   
-header p {
-    color: var(--color-two);
+#intro p {
+    color: var(--color-one);
     font-size: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 4rem;
+}
+
+header{
+    margin: 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
 
 header nav {
@@ -68,10 +77,13 @@ header nav a {
     text-decoration: none;
     color: var(--color-five);
     font-weight: bold;
+    display: block;
+    padding: 0.2rem;
 }
 
 header nav a:hover{
     color: var(--color-four);
+    font-size: 102%;
 }
 
 main {
@@ -91,12 +103,23 @@ main section {
 #about img{
     border-radius: 20%;
     width: auto;
-    height: 35vh;
+    height: 50vh;
+}
+
+#about img:hover{
+    transform: scale(101%);
 }
 
 #sub-content{
     width: 50%;
     margin: auto 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#sub-content p{
+    color: var(--color-five);
+    margin: 0.4rem 0;
 }
 
 main h2 {
@@ -106,6 +129,11 @@ main h2 {
 
 main p {
     line-height: 1.5;
+}
+
+
+#projects{
+    scroll-margin-top: 4rem;
 }
 
 .project-list {
@@ -123,6 +151,11 @@ main p {
     width: 40%;
     background-color: var(--color-three);
     border-radius: 1rem;
+}
+
+.project-list li:hover{
+    transform: scale(101%);
+    background-color: var(--color-seven);
 }
 
 .project-list li img{
@@ -153,6 +186,10 @@ main p {
     color: var(--color-one);
 }
 
+#certifications{
+    scroll-margin-top: 4rem;
+}
+
 .certifications-list {
     display: flex;
     padding: 0 1rem;
@@ -166,9 +203,14 @@ main p {
     padding: 1rem;
     height: auto;
     width: 40%;
-    background-color: var(--color-five);
+    background-color: var(--color-three);
     flex-grow: 0.5;
     border-radius: 1rem;
+}
+
+.certifications-list li:hover{
+    transform: scale(101%);
+    background-color: var(--color-seven);
 }
 
 .certifications-list li div{
@@ -208,25 +250,29 @@ main p {
     width: 50%;
 }
 
-main #contact ul{
+#contact{
+    scroll-margin-top: 4rem;
+}
+
+#contact ul{
     list-style-type: none;
     display: flex;
     justify-content: space-around;
 }
 
-main #contact ul li{
+#contact ul li{
     padding: 1rem;
-    background-color: var(--color-five);
-    width: 40%;
-    border-radius: 0.5rem;
+    border-bottom: 1px solid var(--color-two);
+    width: 25%;
+    border-bottom-left-radius: 0.3rem;
 }
 
-main #contact ul li a{
+#contact ul li a{
     text-decoration: none;
     color: var(--color-two);
 }
 
-main #contact ul li a:hover{
+#contact ul li a:hover{
     color: var(--color-one);
 }
 
