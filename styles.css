@@ -86,6 +86,10 @@ header nav a:hover{
     font-size: 102%;
 }
 
+#mobile-only{
+    display: none;
+}
+
 main {
     padding: 0 2rem;
 }
@@ -284,4 +288,108 @@ footer{
 
 footer p{
     color: var(--color-six);
+}
+
+@media screen and (max-width: 600px) {
+    #intro{
+        padding: 2rem 0 1rem 0;
+        margin: 0 0 -3.6rem 0;
+        width: 100vw;
+    }
+    
+    #intro h1 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+      
+    #intro p {
+        text-align: center;
+    }
+
+    header nav{
+        display: none;
+    }
+
+    #mobile-only{
+        background-color: var(--color-two);
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+    
+    #mobile-only ul{
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #mobile-only li {
+        margin: 0 1rem;
+        font-size: 1rem;
+    }
+    
+    #mobile-only a {
+        text-decoration: none;
+        color: var(--color-five);
+        font-weight: bold;
+        display: block;
+        padding: 0.2rem;
+    }
+    
+    #mobile-only a:hover{
+        color: var(--color-four);
+        font-size: 102%;
+    }
+
+    #about h3{
+        font-size: 1rem;
+    }
+
+    #about p{
+        font-size: 1rem;
+    }
+
+    #about div{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    #about h3{
+        color: var(--color-four);
+    }
+
+    #about img{
+        border-radius: 10%;
+        width: 40vh;
+        height: auto;
+    }
+
+    #projects{
+        scroll-margin-top: 10rem;
+        padding: 0;
+    }
+    
+    .project-list li {
+        margin: 1rem 0;
+        width: 100vw;
+    }
+
+    #certifications{
+        scroll-margin-top: 10rem;
+    }
+
+    .certifications-list li {
+        margin: 1rem 0;
+        width: 100vw;
+    }
+
+    #contact{
+        scroll-margin-top: 10rem;
+    }
+    
+    #contact ul{
+        flex-direction: column;
+    }
 }
