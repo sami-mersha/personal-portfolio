@@ -290,6 +290,20 @@ footer p{
     color: var(--color-six);
 }
 
+#credits{
+    text-align: end;
+}
+
+#credits p{
+    color: var(--color-one);
+}
+
+#credits a{
+    text-decoration: none;
+    color: var(--color-two);
+    padding: 0.2rem;
+}
+
 @media screen and (max-width: 600px) {
     #intro{
         padding: 2rem 0 1rem 0;
